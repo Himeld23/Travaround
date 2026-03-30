@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from "next/image";
+
 
 
 const navLinks = [
@@ -23,10 +25,15 @@ const Header = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl sm:text-3xl font-bold text-white hover:scale-105 transition-transform duration-300"
+           className="hover:scale-105 transition-transform duration-300"
           >
-            <span className="text-yellow-400">Trav</span>
-            <span className="text-white">around</span>
+            <Image
+    src="/Travaroundlogo.png"
+    alt="Travaround Logo"
+    width={180}
+    height={40}
+    priority
+  />
           </Link>
 
           {/* Desktop Navigation */}

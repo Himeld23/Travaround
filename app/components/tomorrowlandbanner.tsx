@@ -339,14 +339,14 @@ export const TomorrowlandBanner = () => {
 
           {step === 'done' && (
             <div className="flex flex-col items-center justify-center flex-1 text-center py-8">
-              <div className="text-6xl mb-5">🎉</div>
-              <h3 className="text-2xl font-bold text-white mb-3">You&apos;re on the list!</h3>
+              <div className="text-6xl mb-5">✅</div>
+              <h3 className="text-2xl font-bold text-white mb-3">Thanks for Submitting!</h3>
               <p className="text-blue-200 text-sm max-w-xs leading-relaxed mb-2">
-                Our travel expert will reach out to <span className="text-yellow-400 font-semibold">{form.email}</span> within 24 hours with full package details.
+                Our team will contact you at <span className="text-yellow-400 font-semibold">{form.email}</span> within 24 hours with full package details and pricing.
               </p>
               {form.phone && (
                 <p className="text-blue-300 text-xs mb-8">
-                  We&apos;ll also WhatsApp you on <span className="text-yellow-400">{form.phone}</span>
+                  We&apos;ll also reach out on WhatsApp: <span className="text-yellow-400">{form.phone}</span>
                 </p>
               )}
               <div className="bg-white/10 border border-white/10 rounded-2xl p-4 text-left w-full max-w-xs mb-8">

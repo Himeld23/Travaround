@@ -130,11 +130,15 @@ export const ContactSection = ({
           <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
             {submitted ? (
               <div className="text-center py-10">
-                <div className="text-6xl mb-4">🎉</div>
-                <h4 className="text-2xl font-bold text-white mb-2">Message Sent!</h4>
-                <p className="text-blue-200">
-                  Thank you for reaching out! Our travel experts will get back to you within 24
-                  hours.
+                <div className="text-6xl mb-4">✅</div>
+                <h4 className="text-2xl font-bold text-white mb-3">
+                  Thanks for Submitting!
+                </h4>
+                <p className="text-blue-200 text-base leading-relaxed">
+                  Our team has received your message and will contact you shortly. We typically respond within <span className="text-yellow-400 font-semibold">24 hours</span>.
+                </p>
+                <p className="text-gray-400 text-sm mt-3">
+                  In the meantime, feel free to WhatsApp or call us directly.
                 </p>
                 <button
                   onClick={() => {
