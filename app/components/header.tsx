@@ -18,8 +18,8 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-blue-900 via-blue-800 to-black sticky top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <header className="bg-white sticky top-0 z-50 shadow-md border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2">
         <div className="flex justify-between items-center">
 
           {/* Logo */}
@@ -30,9 +30,10 @@ const Header = () => {
             <Image
     src="/Travaroundlogo.png"
     alt="Travaround Logo"
-    width={180}
-    height={40}
+    width={210}
+    height={52}
     priority
+    style={{ objectFit: "contain" }}
   />
           </Link>
 
@@ -42,7 +43,7 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white font-medium hover:text-yellow-400 transition-colors duration-300 relative group text-sm"
+                className="text-blue-900 font-medium hover:text-yellow-500 transition-colors duration-300 relative group text-sm"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
@@ -54,29 +55,29 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+917093196599"
-              className="flex items-center gap-1.5 text-yellow-400 font-semibold text-sm hover:text-white transition-colors duration-300"
+              className="flex items-center gap-1.5 text-blue-900 font-semibold text-sm hover:text-yellow-500 transition-colors duration-300"
             >
               📞 +91 7093196599
             </a>
             <Link
               href="/book"
-              className="bg-yellow-400 text-blue-900 px-6 py-2.5 rounded-full font-bold text-sm hover:bg-transparent hover:text-yellow-400 border-2 border-yellow-400 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-yellow-400/50"
+              className="bg-blue-900 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-yellow-400 hover:text-blue-900 border-2 border-blue-900 transition-all duration-300 hover:-translate-y-1 shadow-lg"
             >
               Book Now
             </Link>
           </div>
 
-          {/* Mobile: Book Now + Hamburger */}
+          {/* Mobile: Call + Hamburger */}
           <div className="flex items-center gap-3 md:hidden">
             <a
               href="tel:+917093196599"
-              className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold text-xs border-2 border-yellow-400 hover:bg-transparent hover:text-yellow-400 transition-all duration-300"
+              className="bg-blue-900 text-white px-4 py-2 rounded-full font-bold text-xs border-2 border-blue-900 hover:bg-yellow-400 hover:text-blue-900 hover:border-yellow-400 transition-all duration-300"
             >
               📞 Call Us
             </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-white p-1.5 rounded-lg hover:bg-white/10 transition-colors duration-200"
+              className="text-blue-900 p-1.5 rounded-lg hover:bg-blue-50 transition-colors duration-200"
               aria-label="Toggle menu"
             >
               {menuOpen ? (
@@ -95,14 +96,14 @@ const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-900/95 backdrop-blur-sm border-t border-white/10">
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-white font-medium py-3 px-4 rounded-xl hover:bg-yellow-400/10 hover:text-yellow-400 transition-all duration-200 text-sm border border-transparent hover:border-yellow-400/20"
+                className="text-blue-900 font-medium py-3 px-4 rounded-xl hover:bg-blue-50 hover:text-yellow-500 transition-all duration-200 text-sm border border-transparent hover:border-blue-100"
               >
                 {link.label}
               </Link>

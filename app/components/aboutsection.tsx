@@ -67,7 +67,7 @@ export const Aboutsection = () => {
             <p className="text-gray-600 leading-relaxed mb-5">
               At <span className="font-semibold text-blue-900">Travaround</span>, we believe that
               travel should be exciting, affordable, and accessible to everyone. Based in{" "}
-              <span className="font-semibold text-gray-800">Kolkata</span>, our mission is to help
+              <span className="font-semibold text-gray-800">Hyderabad</span>, our mission is to help
               travelers explore the world without worrying about expensive costs.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">

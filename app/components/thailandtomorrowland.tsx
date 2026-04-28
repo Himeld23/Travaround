@@ -20,7 +20,7 @@ export const ThailandTomorrowland = ({
 }: ThailandTomorrowlandProps) => {
   const { currency } = useCurrency();
   return (
-    <section className="relative py-0 overflow-hidden">
+    <section className="relative py-4 overflow-hidden">
       {/* Background Image */}
       <div className="relative h-[600px] md:h-[680px]">
         <Image
