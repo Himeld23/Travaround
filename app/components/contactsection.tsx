@@ -72,12 +72,12 @@ export const ContactSection = ({
                 {
                   icon: "📍",
                   title: "Visit Us",
-                  detail: "Park Street, Kolkata, West Bengal — 700016",
+                  detail: "Balanagar, Hyderabad — 500018",
                 },
                 {
                   icon: "📞",
                   title: "Call Us",
-                  detail: "+91 98300 XXXXX",
+                  detail: "+91 7093196599",
                 },
                 {
                   icon: "✉️",

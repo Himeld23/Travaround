@@ -50,22 +50,30 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Book Now */}
-          <Link
-            href="/book"
-            className="hidden md:inline-block bg-yellow-400 text-blue-900 px-6 py-2.5 rounded-full font-bold text-sm hover:bg-transparent hover:text-yellow-400 border-2 border-yellow-400 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-yellow-400/50"
-          >
-            Book Now
-          </Link>
-
-          {/* Mobile: Book Now + Hamburger */}
-          <div className="flex items-center gap-3 md:hidden">
+          {/* Desktop: Phone + Book Now */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="tel:+917093196599"
+              className="flex items-center gap-1.5 text-yellow-400 font-semibold text-sm hover:text-white transition-colors duration-300"
+            >
+              📞 +91 7093196599
+            </a>
             <Link
               href="/book"
-              className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold text-xs border-2 border-yellow-400 hover:bg-transparent hover:text-yellow-400 transition-all duration-300"
+              className="bg-yellow-400 text-blue-900 px-6 py-2.5 rounded-full font-bold text-sm hover:bg-transparent hover:text-yellow-400 border-2 border-yellow-400 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-yellow-400/50"
             >
               Book Now
             </Link>
+          </div>
+
+          {/* Mobile: Book Now + Hamburger */}
+          <div className="flex items-center gap-3 md:hidden">
+            <a
+              href="tel:+917093196599"
+              className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold text-xs border-2 border-yellow-400 hover:bg-transparent hover:text-yellow-400 transition-all duration-300"
+            >
+              📞 Call Us
+            </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white p-1.5 rounded-lg hover:bg-white/10 transition-colors duration-200"

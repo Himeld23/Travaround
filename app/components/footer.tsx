@@ -112,11 +112,11 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 mt-1">📍</span>
-                <span>123 Travel Street, Adventure City, AC 12345</span>
+                <span>Balanagar, Hyderabad - 500018</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">📞</span>
-                <span>+1 (555) 123-4567</span>
+                <a href="tel:+917093196599" className="hover:text-yellow-400 transition-colors duration-300">+91 7093196599</a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">✉️</span>

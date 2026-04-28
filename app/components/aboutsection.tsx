@@ -12,11 +12,11 @@ export const Aboutsection = () => {
             {/* Main large image */}
             <div className="relative h-[300px] sm:h-[380px] lg:h-[420px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg"
+                src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=900"
                 alt="Travel experience"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
             </div>
@@ -24,11 +24,11 @@ export const Aboutsection = () => {
             {/* Small floating image — bottom right */}
             <div className="absolute -bottom-6 -right-6 w-44 h-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
               <Image
-                src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg"
+                src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=200"
                 alt="Happy travelers"
                 fill
+                sizes="176px"
                 className="object-cover"
-                unoptimized
               />
             </div>
 

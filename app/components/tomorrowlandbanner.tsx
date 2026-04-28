@@ -141,11 +141,11 @@ export const TomorrowlandBanner = () => {
         {/* ── Left: Image Panel ── */}
         <div className="relative h-56 sm:h-72 lg:h-auto lg:w-[45%] flex-shrink-0 rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none overflow-hidden">
           <Image
-            src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
+            src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=900"
             alt="Tomorrowland Thailand"
             fill
+            sizes="(max-width: 1024px) 100vw, 45vw"
             className="object-cover"
-            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10 lg:bg-gradient-to-r lg:from-transparent lg:to-black/60" />
 

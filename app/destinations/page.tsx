@@ -244,11 +244,11 @@ const DestinationCard = ({ dest }: { dest: Destination }) => (
     {/* Image */}
     <div className="relative h-52 overflow-hidden">
       <Image
-        src={dest.image}
+        src={`${dest.image}?auto=compress&cs=tinysrgb&w=800`}
         alt={dest.name}
         fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover group-hover:scale-110 transition-transform duration-500"
-        unoptimized
       />
       {dest.badge && (
         <span className="absolute top-4 left-4 bg-yellow-400 text-blue-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">
@@ -327,11 +327,11 @@ export default function DestinationsPage() {
       {/* ── Hero ── */}
       <section className="relative h-[340px] sm:h-[420px] flex items-end">
         <Image
-          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg"
+          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Destinations"
           fill
+          sizes="100vw"
           className="object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-black/30" />

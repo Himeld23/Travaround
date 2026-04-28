@@ -85,12 +85,12 @@ const HeroSlider = () => {
       {/* Background image */}
       <div className="absolute inset-0 transition-all duration-1000">
         <Image
-          src={current.backgroundImage}
+          src={`${current.backgroundImage}?auto=compress&cs=tinysrgb&w=1920`}
           alt="Background"
           fill
+          sizes="100vw"
           className="object-cover opacity-25"
           priority
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/40 to-black/70" />
       </div>
@@ -194,11 +194,11 @@ const HeroSlider = () => {
                   <div className="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/20 shadow-2xl w-72 h-[380px]">
                     <div className="relative h-full">
                       <Image
-                        src={dest.image}
+                        src={`${dest.image}?auto=compress&cs=tinysrgb&w=400`}
                         alt={dest.name}
                         fill
+                        sizes="288px"
                         className="object-cover"
-                        unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
 
@@ -244,11 +244,11 @@ const HeroSlider = () => {
           <div className="md:hidden flex justify-center">
             <div className="relative w-72 h-72 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
               <Image
-                src={current.image}
+                src={`${current.image}?auto=compress&cs=tinysrgb&w=400`}
                 alt={current.name}
                 fill
+                sizes="288px"
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white">

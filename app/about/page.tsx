@@ -8,11 +8,11 @@ import { ContactSection } from "../components/contactsection";
 const AboutHero = () => (
   <section className="relative h-[340px] sm:h-[420px] flex items-end">
     <Image
-      src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg"
+      src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1920"
       alt="About Travaround"
       fill
+      sizes="100vw"
       className="object-cover"
-      unoptimized
       priority
     />
     <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/70 to-black/30" />
@@ -46,11 +46,11 @@ const OurStory = () => (
         <div className="relative mb-10 lg:mb-0 order-2 lg:order-1">
           <div className="relative h-[300px] sm:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg"
+              src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=900"
               alt="Our team planning travel"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
-              unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent" />
           </div>

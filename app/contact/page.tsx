@@ -9,11 +9,11 @@ import { ContactSection } from "../components/contactsection";
 const ContactHero = () => (
   <section className="relative h-[300px] sm:h-[380px] flex items-end">
     <Image
-      src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg"
+      src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1920"
       alt="Contact Travaround"
       fill
+      sizes="100vw"
       className="object-cover"
-      unoptimized
       priority
     />
     <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/65 to-black/30" />
@@ -41,18 +41,18 @@ const quickContacts = [
   {
     icon: "📞",
     label: "Call Us",
-    value: "+91 98300 XXXXX",
+    value: "+91 7093196599",
     sub: "Mon–Sat, 9AM–7PM",
-    href: "tel:+919830000000",
+    href: "tel:+917093196599",
     cta: "Call Now",
     color: "from-blue-600 to-blue-900",
   },
   {
     icon: "💬",
     label: "WhatsApp",
-    value: "+91 98300 XXXXX",
+    value: "+91 7093196599",
     sub: "Fastest response — usually under 30 mins",
-    href: "https://wa.me/919830000000?text=Hi%20Travaround%2C%20I%20want%20to%20enquire%20about%20a%20travel%20package",
+    href: "https://wa.me/917093196599?text=Hi%20Travaround%2C%20I%20want%20to%20enquire%20about%20a%20travel%20package",
     cta: "Chat Now",
     color: "from-green-500 to-green-700",
   },
@@ -68,9 +68,9 @@ const quickContacts = [
   {
     icon: "📍",
     label: "Visit Office",
-    value: "Park Street, Kolkata",
-    sub: "West Bengal — 700016",
-    href: "https://maps.google.com",
+    value: "Balanagar, Hyderabad",
+    sub: "Telangana — 500018",
+    href: "https://maps.google.com/?q=Balanagar,Hyderabad,Telangana",
     cta: "Get Directions",
     color: "from-purple-500 to-purple-800",
   },
@@ -120,11 +120,11 @@ const TomorrowlandEnquiry = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
       <div className="relative rounded-2xl overflow-hidden">
         <Image
-          src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
+          src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200"
           alt="Tomorrowland Thailand"
           fill
+          sizes="(max-width: 1280px) 100vw, 1280px"
           className="object-cover"
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-blue-900/50" />
         <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6 px-8 py-10 sm:py-8">
@@ -140,7 +140,7 @@ const TomorrowlandEnquiry = () => (
             </p>
           </div>
           <a
-            href="https://wa.me/919830000000?text=Hi%2C%20I%20want%20to%20enquire%20about%20Tomorrowland%20Thailand%202025%20package"
+            href="https://wa.me/917093196599?text=Hi%2C%20I%20want%20to%20enquire%20about%20Tomorrowland%20Thailand%202025%20package"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 bg-yellow-400 text-blue-900 px-8 py-3.5 rounded-full font-bold text-sm hover:bg-white transition-all duration-300 hover:-translate-y-0.5 shadow-lg whitespace-nowrap"
@@ -240,7 +240,7 @@ const FAQ = () => {
         <p className="text-center text-gray-500 mt-10 text-sm">
           Still have questions?{" "}
           <a
-            href="https://wa.me/919830000000"
+            href="https://wa.me/917093196599"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-900 font-bold hover:text-yellow-600 transition-colors"
@@ -268,8 +268,8 @@ const OfficeMap = () => (
 
           <div className="space-y-5">
             {[
-              { icon: "📍", title: "Address", detail: "Park Street, Kolkata\nWest Bengal — 700016, India" },
-              { icon: "📞", title: "Phone", detail: "+91 98300 XXXXX" },
+              { icon: "📍", title: "Address", detail: "Balanagar, Hyderabad\nTelangana — 500018, India" },
+              { icon: "📞", title: "Phone", detail: "+91 7093196599" },
               { icon: "✉️", title: "Email", detail: "info@travaround.com" },
               { icon: "🕐", title: "Hours", detail: "Monday – Saturday: 9:00 AM – 7:00 PM\nSunday: Closed" },
             ].map((item) => (
@@ -286,7 +286,7 @@ const OfficeMap = () => (
           </div>
 
           <a
-            href="https://maps.google.com/?q=Park+Street+Kolkata"
+            href="https://maps.google.com/?q=Balanagar,Hyderabad,Telangana"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-yellow-400 hover:text-blue-900 transition-all duration-300 w-fit"
@@ -299,7 +299,7 @@ const OfficeMap = () => (
         <div className="lg:col-span-3 rounded-2xl overflow-hidden shadow-xl border border-gray-100 min-h-[320px] relative bg-gray-100">
           {/* Replace src with your actual Google Maps embed URL */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.386!2d88.3514!3d22.5448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b5a7a3e0c1%3A0x0!2sPark+Street%2C+Kolkata%2C+West+Bengal!5e0!3m2!1sen!2sin!4v1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2!2d78.4072!3d17.4599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb918b97777777%3A0x0!2sBalanagar%2C+Hyderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1"
             width="100%"
             height="100%"
             style={{ border: 0, minHeight: "320px" }}

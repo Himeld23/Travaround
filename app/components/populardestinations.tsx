@@ -94,11 +94,11 @@ export const PopularDestinations = ({
               className="relative h-72 rounded-2xl overflow-hidden group block shadow-md hover:shadow-xl transition-shadow duration-300"
             >
               <Image
-                src={dest.image}
+                src={`${dest.image}?auto=compress&cs=tinysrgb&w=800`}
                 alt={dest.name}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
-                unoptimized
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-blue-900/80 transition-all duration-500"></div>

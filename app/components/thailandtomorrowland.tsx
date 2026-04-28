@@ -24,17 +24,17 @@ export const ThailandTomorrowland = ({
       {/* Background Image */}
       <div className="relative h-[600px] md:h-[680px]">
         <Image
-          src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
+          src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Tomorrowland Thailand Festival"
           fill
+          sizes="100vw"
           className="object-cover"
-          unoptimized
         />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-blue-900/40"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex items-center">
+        <div className="absolute inset-0 flex items-center ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
             <div className="max-w-xl">
               {/* Tag */}
